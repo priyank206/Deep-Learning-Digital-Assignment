@@ -1,0 +1,68 @@
+
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Brain Tumor MRI Classification Using Deep Learning}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project focuses on the classification of brain tumor images using deep learning techniques applied to MRI scans. The primary objective is to develop a model that accurately identifies the presence of brain tumors. Using a dataset from Kaggle, we leverage Convolutional Neural Networks (CNNs) for feature extraction and classification. The final model is evaluated based on its accuracy, precision, recall, and F1-score, with the goal of achieving a high-performing automated solution for early detection of brain tumors. Such advancements could assist in enhancing diagnostic processes and improving patient outcomes.
+\textbf{Keywords:} brain tumor, MRI scans, classification, convolutional neural network (CNNs), accuracy, precision.
+\end{abstract}
+
+\section{Objective}
+The objectives of the project are:
+\begin{itemize}
+    \item To develop a deep learning-based classification model for brain tumor detection using MRI images.
+    \item To train and evaluate the model on a publicly available dataset from Kaggle containing both tumor and non-tumor images.
+    \item To achieve high accuracy, precision, and recall for the classification task.
+    \item To contribute towards developing an automated diagnostic tool that aids radiologists in detecting brain tumors early, potentially saving lives.
+\end{itemize}
+
+\section{Literature Survey}
+\begin{enumerate}
+    \item Magnetic Resonance Imaging (MRI)-based automatic brain picture segmentation and classification has been proposed by akter et al. \cite{akter2024robust} with a deep Convolutional Neural Network (CNN)-based architecture. Using the segmentation strategy, the model achieves an accuracy of 98.8\%, while in a merged dataset, it achieves a higher accuracy of 98.7\%. Overall, the model surpasses current pre-trained models across all six datasets. Through the use of MRI scan input images, this innovative system may be used in clinics to automatically identify and segment brain cancers.
+    
+    \item The goal of elena et al. \cite{elena2023brain} was to use a ResNet-50 architecture to create an image classification model for brain tumor detection. A dataset of 3847 brain MRI images was used for training, validation, and testing, and the CRISP-DM approach was applied for data mining. Pixels were divided by 255 using a data generator, and the photos were resized to a 256 by 256 scale. The results of the training and assessment procedures were 92\% accuracy and 94\% precision.
+    
+    \item The progressive generative adversarial network (SPGAN-MSOA-CBT-MRI) for brain tumor classification on MRI images is presented by nagarani et al. \cite{nagarani2024self} using a self-attention approach. Data preprocessing using anisotropic diffusion Kuwahara filtering (ADKF) is done on data collected from the Brats 2019 dataset. Six features related to texture are extracted, including homogeneity, contrast, inverse difference moment, entropy, correlation, and variance, and are subsequently supplied into the feature extraction segment.
+    
+    \item Mohanty et al. \cite{mohanty2024feature} presents a deep learning model to enhance the precision of MRI-based brain tumor classification through the application of a soft attention mechanism. The model aggregates and combines information from each layer using a Convolutional Neural Network (CNN) with four convolution layers. By highlighting the characteristics that are most clinically relevant, the soft attention mechanism at the terminal phases improves classification accuracy.
+    
+    % \item A progressive generative adversarial network (SPGAN-MSOA-CBT-MRI) grounded in self-attention is presented in the manuscript for the purpose of classifying brain tumors from MRI data. The Brats 2019 dataset is used as the source of the data, which is then pre-processed using anisotropic diffusion Kuwahara filtering (ADKF) to minimize noise and optimize image quality.
+    
+    \item The identical radiographic features and laborious exams associated with brain tumors might make diagnosis difficult. For automatic brain tumor extraction and detection from 2D CE MRI images, an intelligent system is proposed by sahoo et al. \cite{sahoo2023efficient}. In order to identify extracted tumors using a YOLO2 transfer learning approach, the system is divided into two stages.
+    
+    % \item The deep learning model for brain tumor classification using magnetic resonance imaging (MRI) presented in this study may have an impact on early diagnosis and treatment approaches. Convolutional neural networks (CNNs) with four convolution layers and a soft attention mechanism are used by the model to extract features.
+    
+    \item Ranjan et al. \cite{ranjbarzadeh2021brain} increased the diagnostic accuracy of brain tumors by using denoising and data augmentation methods to medical images from three different datasets. To assess the efficacy of these techniques, the researchers employed Convolutional Neural Networks (CNNs).
+    
+    % \item The goal of the project was to use a ResNet-50 architecture to create an image classification model for brain tumor detection. A dataset of 3847 brain MRI images was used for training, validation, and testing, and the CRISP-DM approach was applied for data mining.
+    
+    \item \cite{khan2024brain}The administration of healthcare has improved, while brain tumors remain a leading cause of mortality globally. Essential resources for medical research include databases such as those on pancreatic and brain tumors.
+
+    \item Patients are very concerned about brain tumors because they have the potential to become malignant cells. Improving their quality of life requires early detection and treatment. The most popular technique for finding brain tumors is to use magnetic resonance imaging (MRI) scans. But the procedure is time-consuming and demands image processing knowledge. Because of its success in finding aberrant brain regions, the burgeoning subject of deep learning (DL) machine learning has drawn attention. Shenbagarajan et al. \cite{anantharajan2024mri} suggests a brand-new DL and ML-based MRI brain tumor detection technique. The Adaptive Contrast Enhancement Algorithm (ACEA) and median filter are used to preprocess the MRI images before fuzzy c-means segmentation is applied. Features including energy, mean, entropy, and contrast are extracted using the gray-level co-occurrence matrix (GLCM). Combined Deep Neural Support
+
+    Deep learning has greatly advanced medical knowledge by providing a better grasp of biomechanisms. Shreya et al. \cite{shreyas2017deep}  focuses on the use of deep learning for brain tumor segmentation, which is a difficult issue because tumor forms and sizes vary widely. In comparison to state-of-the-art models, a novel, straightforward fully convolutional network (FCN) is proposed, which offers competitive performance and faster runtime. The approach is 18 times faster than the state-of-the-art model, achieving dice scores of 0.83 in the total tumor region, 0.75 in the core tumor region, and 0.72 in the enhancing tumor region using the Brain Tumor Segmentation (BraTS) challenge database.
+
+    Using brain magnetic resonance imaging (MRI) and machine vision techniques, Nawaz et al. \cite{nawaz2022brain} sought to create a model for classifying brain tumors. For the categorization of cystic, glioma, meningioma, and metastatic brain tumors, a unique hybrid-brain-tumor-classification (HBTC) framework was created and assessed. The brain tumor diagnosis method performed better and had less inherent complexity thanks to the framework. From the segmented dataset, the input brain MRI dataset was preprocessed, split, and retrieved. The framework's classifiers, which include multilayer perception, J48, meta bagging, and random tree, were trained with the nine best-optimized features. With a maximum brain tumor classification performance of 98.8%, the framework's potential as a cutting-edge and reliable classification framework was evident.
+    
+\end{enumerate}
+
+
+\bibliographystyle{unsrt} 
+\bibliography{references}
+
+\end{document}
+
+
+
+
